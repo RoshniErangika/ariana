@@ -1,0 +1,453 @@
+img[alt*= "logo"]{																									/*Selects the social media logo images - Attribut Selector*/
+	width:40px;
+}
+
+img[alt = "recent_main"]{																					  /*Selects the main page recent release image - Attribut Selector*/
+	width:400px;
+	box-shadow: 0 16px 8px rgba(0,0,0,0.5);
+	float:left;
+}
+
+img[alt*= "fragrance"]{								  															  /*Selects the main page fragrance images - Attribut Selector*/
+	width:300px;
+	box-shadow: 0 16px 8px rgba(0,0,0,0.5);
+	margin-bottom : 15px;
+}
+
+img[alt*= "blog"]{																				 						 /*Selects the images in the blogs - Attribut Selector*/
+	width:400px;
+}
+
+header div:first-child{																			  					/*Selects the main page first header - Structural Selector*/
+	font-size : 165px;
+	text-shadow: 0 20px 4px rgba(0,0,0,0.8);
+	font-family: 'Monsieur La Doulaise', cursive;
+	padding-bottom : 25px;
+}
+
+header div:last-child {																							     /*Selects the main page last header - Structural Selector*/
+	font-size:50px;
+	margin-right:-100px;
+	margin-left :200px ;
+}
+
+button:hover{																														      /*Adds effect when button is hovered*/
+	box-shadow :0 10px 10px rgba(0,0,0,0.3); 
+	color : black;
+}
+
+button{																																					   /*Styles for button*/
+	font-family: 'Cormorant Garamond', serif;
+	background-color:#61484d;
+    border: 0;
+    color: #ffffff;																																						/*color*/
+	padding-bottom:10px;
+	padding-top:10px;
+	border-radius:2px;
+	cursor:pointer;
+	width:150px;
+	margin-left:160px;
+	margin-top:10px;
+}
+
+body{																																		/*Add style for all the pages body*/
+	margin:0;
+}
+
+h2{																														  /*Add style for all the h2 headings in the main page*/
+	margin:0;
+	font-size: 6em;
+	color:white;
+	text-shadow: 0 20px 4px rgba(0,0,0,0.3); 
+}
+
+h4{ 																													  /*Add style for all the h4 headings in the main page*/
+	text-align : center;
+	font-size:2em;
+	margin:0;
+	font-family: 'Monsieur La Doulaise', cursive;
+}
+
+
+aside{																																					  /*social media links*/
+	transition: all 0.5s ease-in-out;
+	float: left;
+	width: 20px;
+	position: fixed;
+	margin-top: 450px;
+}
+
+
+nav {																																						  /*navigation bar*/
+	width: 700px;
+	display: block;
+	position: fixed;																														   /*sticks to the top of the page*/
+	margin-top: 10px;
+	margin-left: 650px;
+}
+
+ul {																							    
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	list-style-type: none;
+	font-family: 'Cormorant Garamond', serif;
+	background-image: linear-gradient(to right ,rgba(65, 63, 61,0.6), rgba(166, 101, 108,0.5));																	
+}
+
+li {																													  /*align the links to the right of the navigation bar*/
+	float: left;
+}
+
+li a:link { 																												 /*Adds effect to the links which were not visited*/
+	color : black;																																						
+	display: block;
+	padding: 14px 16px 14px 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+li a:visited{																												    /*Adds effect to the link when link is visited*/
+	color:pink;																																						
+	text-decoration: none;
+}
+
+li a:hover:not(.active) {		/*adds effect to the other links except for the page link which the user is currently in when the user hovers the link - Negation Pseudo class*/
+	color:white;																																						
+	text-decoration: none;
+	background-color: #8c8080;
+}
+
+.active {																							/*adds effect to the current link to show the user which page she/he is in*/
+	text-decoration: none;
+	background-color: #61484d;
+}
+
+
+footer{																																								  /*footer*/
+	background-color : rgba(166, 101, 108,0.5);
+	padding-top:50px;
+	padding-left:100px;
+	padding-bottom:200px;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+a{																																	  /*adds styles to the links in the footer*/
+	color : black;																																			
+	text-decoration: none;	
+}
+
+.footer_section1{																													  /*adds styles to the links in the footer*/
+	float:left;
+	margin-top:0;
+	margin-left:120px;
+	text-align:center;
+}
+
+.footer_section2{ 																													  /*adds styles to the links in the footer*/
+	float:left;
+	margin-top:0;
+	margin-left:300px;
+	text-align:center
+}
+
+
+@keyframes animate{																																		/*main page Animation*/
+	
+	0%,100%{
+		background-image: url("images/a1.jpg");
+	}
+	25%{
+		background-image: url("images/a2.jpg");
+	}
+	50%{
+		background-image: url("images/a3.jpg");
+	}
+	75%{
+		background-image: url("images/a4.jpg");
+	}
+	
+}
+
+.main_header{																													 /*adds styles to the header of the main page*/
+	width : 30%;
+	float: right;
+	color: black;																																					
+	margin-left:500px;
+	margin-right:100px;
+	margin-top : 150px;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.main_sub-head{																													   /*adds styles to the "Grande" in main page*/
+	font-size : 100px;
+	margin-top:-100px;
+	margin-left:100px;
+	text-shadow: 0 20px 4px rgba(0,0,0,0.8);																													
+}
+
+.main_body {																													   /*adds styles to the main page 1st section*/
+	width:auto;
+	height:657px;
+	padding-left:10px;
+	margin:0; 
+	background-size: cover;
+	background-color :#ed7798;
+	background-image: linear-gradient(to right ,rgba(0, 0, 0,0.7), rgba(0, 0, 0,0.0),rgba(0, 0, 0,0.7) );													
+	background-repeat: no-repeat;
+	animation : animate 20s ease-in-out infinite;
+}
+
+.main2_body{																												  	   /*adds styles to the main page 2nd section*/
+	width:auto;
+	height:657px;
+	padding-left:110px;
+	background-size: cover;
+	background-color :gray;
+	background-image: linear-gradient(to right ,rgba(166, 101, 108,0.5), rgba(255, 255, 255,0.5),rgba(166, 101, 108,0.5) );
+}
+
+.main2_recent-fig{																														/*to add the image and figure caption*/
+	margin-left:200px;
+	margin-top:20px;
+}
+
+.main2_recent-caption{																												/*adds atyle for the caption of the image*/
+	float:left; 
+	font-size:2em;
+	margin-left:100px;
+	margin-top:50px;
+}
+
+.main3_body{																												 	   /*adds styles to the main page 3rd section*/
+	width:auto;
+	height:657px;
+	padding-left:110px;
+	background-size: cover;
+	background-color :#ed7798;
+	background-image: linear-gradient(to right ,rgba(255, 255, 255,0.8), rgba(255, 255, 255,0.5),rgba(255, 255, 255,0.8) ),  url("images/ari4.jpg");
+}
+
+.main3_fragrance{																						  /*adds styles and border to the fragrance section of  the main page*/
+	padding-top:50px;
+	margin-top:50px;
+	border-style:solid;
+	border-width:2px;
+	border-color:gray;
+	width:1150px;
+}
+
+.main3_fragrance-fig{																								   /*to set all the images to the left next to each other*/
+	float:left
+}
+
+.main3_fragrance-caption{																							   /*to add styles for the cation of each fragrance image*/
+	text-align:center;
+}
+
+/*about*/
+
+.about_body{																															/*adds style to the about page body */
+	background: linear-gradient(to right , rgba(166, 101, 108,0.5),rgba(0, 0, 0,1));																			
+	padding-top:1px;
+}
+
+.about_article{																												 /*to styles and background image to the article*/
+	background-image: linear-gradient(to right ,rgba(0, 0, 0,1), rgba(0, 0, 0,0) ),  url("images/about.jpg");													
+	margin : 100px 110px 20px 110px;
+	padding-top : 50px;
+	padding-right : 180px;
+	padding-bottom : 50px;
+}
+
+.about{																														
+	background-image: linear-gradient(to right ,rgba(0, 0, 0,0.2), rgba(0, 0, 0,0.5)); 																			
+	padding:10px 20px 10px 20px;
+}
+
+.about_header{																										/*to add styles for the header of the about page article*/
+	color: white;																																					
+	font-size : 150px;
+	margin-top :100px;
+	text-shadow: 0 20px 4px rgba(0,0,0,0.3); 																														
+	font-family: 'Cormorant Garamond', serif;
+}
+
+.about_para {																										/*to add styles for the about page article paragraph tag*/
+	color: white;
+	font-family: 'Cormorant Garamond', serif;
+	font-size: 18px;
+}
+
+blockquote p::before,
+blockquote p::after {																 /*adds sttyle for the content of the blockquote - Pseudo elements for generated content*/
+	font-size:2em;
+	color:pink;
+	line-height:0;
+	vertical-align:middle;
+}
+	
+blockquote p:first-child::before{																							  /*adds the content before the blockquote p tag*/
+	content:"\275D" ;
+	margin : 0 5px 0 -40px;
+}
+	
+blockquote p:last-child::after{																								  /*adds the content before the blockquote p tag*/
+content:"\275E" ;
+margin : 0 -40px 0 5px;
+}
+
+.quote{																															   /*adds sttyle for the p tag of blockquote*/
+	color :#C0C0C0;
+	margin-top : -100px;
+	margin-bottom : 50px;
+	text-align:right;
+	font-size:1.5em;
+	font-family: 'Monsieur La Doulaise', cursive;
+}
+
+/*blog*/
+
+time{																																/*adds styles for the date in the blogs*/
+	font-size: 1em;
+	font-style: italic;
+	margin-left:170px;
+}
+
+.blog_body{																															   /*adds styles for the blog page body*/
+	background-image: linear-gradient( to top ,white ,rgba(0, 0, 0,0.3)50%) , url("images/sing.jpg");																
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;	
+	padding-top:1px;
+}
+
+.blog_header{																														 /*adds styles for the blog page header*/
+	margin-left:100px;
+	margin-top : 150px;
+	border-left-width:2px;
+	border-left-style : solid;
+	border-left-color:pink;
+	color :white;																																						
+	font-size : 6em;
+	padding-top:170px;
+	padding-bottom: 170px;
+	padding-left:50px;
+	text-shadow: 0 20px 5px rgba(0,0,0,0.3);																													
+}
+
+.blog{																																		 /*adds styles for blog section*/
+	height : 1150px;
+}
+
+.blog_article1{																													   /*adds styles for the left blog articles*/
+	float :left;
+	margin-left : 100px;	
+}
+
+.blog_article2{																													  /*adds styles for the right blog articles*/
+	float: right;
+	margin-right: 100px; 
+}
+
+article:not(.about_article){													/*to add styles for the two blog articles excluding the about article Negation Pseudo class*/
+	width : 480px;
+	height : 1000px;
+	border-style:solid;
+	border-width:2px;
+	border-color:gray;
+	margin-top : 100px;
+	margin-bottom : 50px;
+	padding-left : 20px;
+	padding-right :20px;
+	background-image: linear-gradient(rgba(65, 63, 61,1), rgba(166, 101, 108,0.5) , rgba(216, 207, 208,0.7));														/*Gradient*/
+}
+
+.blog_head{																											/*to add styles for the header of the two blog articles*/
+	font-family: 'Cormorant Garamond', serif;
+	font-size : 2.4em;
+	text-align:center;
+}
+
+.blog_para:first-of-type::first-letter { 														  /*Selects the first letter in the paragraph of each blog - Pseudo element*/
+	position: relative; 
+	top: 10px;  
+	font-size: 3em; 
+	line-height: 1; 
+	color:#61484d;																																			
+	padding-right:4px;
+	padding-bottom:4px;
+	font-weight: bold; 
+}
+
+/*register*/
+
+.register_body{																													   /*adds sty;es for the register page body*/
+	background-image: linear-gradient( to top ,white ,rgba(0, 0, 0,0.3)50%) , url("images/register.jpg");															
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding-top:1px;
+}
+
+.register_header{																											  	 /*adds styles for the register page header*/
+	text-shadow: 0 20px 4px rgba(0,0,0,0.3);
+	font-family: 'Cormorant Garamond', serif;
+	font-size : 70px;
+	background-color:white;
+	color:black;																																					
+	width:530px;
+	float:left;
+	transform: translate(60px, 200px);																															/*transform*/
+	text-align:center;
+	padding-top:80px;
+	padding-bottom:80px;
+}
+
+form{																														/*adds styles for the form of the register page*/
+	float:right;
+	margin-top:-250px;
+	margin-right:60px;
+	margin-left :50px;
+    background-color: rgba(10,10,10,0.8);
+	border-radius:3px;
+	padding:30px 120px 30px 120px;
+	width:500px;
+}
+
+label , input {																										 /*this would not let the input and labels to be inline*/
+	display: block;
+	font-family: 'Cormorant Garamond', serif;
+}
+
+label{																														   /*adds styles and effects to the form labels*/
+	position:relative;
+	margin-top:-10px;
+	padding-top :20px;
+	font-size:20px;
+	color:#ffffff;																																					
+	transition: all 0.5s ease-in-out;
+}
+
+label:hover{																													   /*adds effects when the label is hovered*/
+	font-size:25px;
+}
+
+input{ 																																		/*adds css to the input entered*/
+	border:0;
+	border-bottom:1px solid #555;  
+	background:transparent;
+	width:100%;
+	padding-bottom:15px;
+	padding-top:8px;
+	font-size:17px;
+	color:#ffffff;																																				
+}
+
+input:focus{ 																										   /* adds css to the input where the cursor is placed */
+	border:none;	
+	outline:none;
+	border-bottom-color:pink;
+	border-bottom-style:solid;
+	border-bottom-width:1px;
+}

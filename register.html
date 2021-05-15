@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset ="utf-8">
+		<title> Roshni - Portfolio </title>
+		<link rel = "stylesheet" href = "main_css.css">    <!-- css -->
+		<link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">    <!-- fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">    <!-- fonts -->	
+	</head>
+	
+	<body class = "register_body">    <!-- displays the reistration page -->
+	
+		<nav>	<!-- displays navigation bar -->
+			<ul> 
+				<li> <a href= "main.html"> HOME </a> </li>
+				<li> <a href= "about_us.html"> ABOUT US </a> </li>
+				<li> <a href= "blog.html"> BLOG </a> </li>
+				<li> <a class = "active" href= "register.html"> REGISTER </a> </li>
+			</ul>
+		</nav>
+	
+		<aside>		<!-- to display the social media logo's -->
+			<a href = "https://www.instagram.com/arianagrande/?hl=en"> <img src = "images/insta.png" alt = "instagram_logo"> </a>
+			<a href = "https://twitter.com/ArianaGrande?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img src = "images/twitter.png" alt = "twitter_logo"> </a>
+			<a href = "https://www.facebook.com/arianagrande/"> <img src = "images/facebook.png" alt = "facebook_logo"> </a>
+		</aside>
+		
+		<header class = "register_header"><b>REGISTRATION FORM</b></header>    <!-- displays the header for the regitration page -->
+			
+		<form method="post" autocomplete ="off">    <!-- displays the form to sign up for the news letter -->
+	
+			<label for = "theName">Your Name </label>
+			<input id = "theName" class = "form__field" name ="name" type="text" placeholder="First-Name     Last-Name" autofocus required />
+	
+			<label for = "theTel">Your Contact Number</label>
+			<input id = "theTel" name ="usernumber" type="tel" placeholder="07xxxxxxxx" required />
+	
+			<label for = "theMail">Your Email</label>
+			<input id = "theMail" name ="mail" type="email" placeholder="xxxx@xxx.com" required />
+	
+			<label for = "theUser">Your Username</label>
+			<input id = "theUser" name ="username" type="text" placeholder="123Xxxx" required />
+	
+			<label for = "thePass">Your Password</label>
+			<input id = "thePass" name = "password" type="password" placeholder="Xxxxxxxx" required />
+			
+			<button type="submit">REGISTER</button>
+			<button type="reset">RESET FORM</button>
+		
+		</form>
+		
+		<footer style="margin-top:700px;">    <!-- displays the footer for the main page  : Specificity specified -->
+		
+			<section class = "footer_section1">    <!-- displays the links for the current page -->
+				<h5>THIS PAGE </h5>
+				<a href = "register.html"> REGISTER </a>
+			</section>
+			
+			<section class = "footer_section2">    <!-- displays the links for other pages -->
+				<h5>OTHER PAGES </h5>
+				<a href = "main.html"> MAIN </a><br>
+				<a href = "about_us.html"> ABOUT US </a> <br>
+				<a href = "blog.html"> BLOG </a> <br>
+			</section>
+			
+			<section class = "footer_section2">    <!-- displays the logos for the social media pages -->
+				<h5>CONTACT </h5>
+				<a href = "https://www.instagram.com/arianagrande/?hl=en"> <img src = "images/insta.png" alt = "instagram_logo"> </a>
+				<a href = "https://twitter.com/ArianaGrande?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <img src = "images/twitter.png" alt = "twitter_logo"> </a>
+				<a href = "https://www.facebook.com/arianagrande/"> <img src = "images/facebook.png" alt = "facebook_logo"> </a>
+			</section>
+			
+		</footer>
+		
+	</body>
+	
+</html>
